@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Page title ─────────────────────────────────────────────────────────
+       Change this to update the browser tab title.
+  ──────────────────────────────────────────────────────────────────────────── -->
+  <title>rSpace — Coworking Space Booking</title>
+
+  <!-- ── Favicon placeholder ────────────────────────────────────────────────
+       Add a real favicon by placing a file at /public/favicon.ico and
+       uncommenting the line below:
+       <link rel="icon" href="/favicon.ico" />
+  ──────────────────────────────────────────────────────────────────────────── -->
+
+  <!-- ── Google Fonts ───────────────────────────────────────────────────────
+       Three fonts are used:
+         • Playfair Display → card headings, hero title (elegant serif)
+         • Dancing Script   → logo "Space" wordmark (handwritten)
+         • DM Sans          → all body text (clean, modern sans-serif)
+
+       To swap fonts:
+         1. Choose new fonts at https://fonts.google.com
+         2. Replace the @import URL below
+         3. Update the CSS variables in main.css:
+              --font-display, --font-script, --font-body
+  ──────────────────────────────────────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ── Main styles ────────────────────────────────────────────────────────
+       All styles live in src/styles/main.css.
+       CSS variables at the top of that file control colors and fonts.
+  ──────────────────────────────────────────────────────────────────────────── -->
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <!-- ── App mount point ────────────────────────────────────────────────────
+       The entire UI is rendered into this div by src/app.js.
+       Do not add content here — it will be replaced on load.
+  ──────────────────────────────────────────────────────────────────────────── -->
+  <div id="app"></div>
+
+  <!-- ── Main script ────────────────────────────────────────────────────────
+       type="module" enables ES module imports (required for Appwrite SDK).
+       src/main.js bootstraps the app and pings Appwrite.
+  ──────────────────────────────────────────────────────────────────────────── -->
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
